@@ -11,5 +11,5 @@ jobs:
       - name: Build image
         run: docker build ./api/ -t charissa27/devops-qr-code-api:latest
       - name: Push image to Docker Hub
-        runs: |
+        run: |
           docker push charissa27/devops-qr-code-api:latest
