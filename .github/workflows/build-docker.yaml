@@ -13,5 +13,5 @@ jobs:
       - name: Push image to Docker Hub
         run: |
           docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} -p ${{ secrets.DOCKER_HUB_TOKEN }}
-          docker push charissa27/devops-qr-code-api:latest
+          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/devops-qr-code-api:latest
           
